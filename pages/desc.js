@@ -1,5 +1,6 @@
 import {withRouter} from 'next/router'
 import Link from 'next/link'
+// import axios from 'axios'
 
 const Desc = ({router}) => {
     return (
@@ -9,5 +10,17 @@ const Desc = ({router}) => {
         </>
     )
 }
+
+// Desc.getInitialProps = async () => {
+//     const promise = new Promise((resolve) => {
+//         axios('请求地址').then(
+//             (res) => {
+                
+//             }
+//         )
+//     })
+
+//     return await promise
+// }
 
 export default withRouter(Desc)
