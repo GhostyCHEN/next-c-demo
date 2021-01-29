@@ -1,5 +1,10 @@
 // import Head from 'next/head'
 import HeaderB from '../components/headerB'
+import '../styles/globals.css'
+import {Button} from 'antd'
+
+//按需加载的babel插件
+//babel-plugin-import
 
 function Header(){
     return (
@@ -10,6 +15,7 @@ function Header(){
             </HeaderB>
             <div>
                 header.com
+                <div><Button>antd按钮</Button></div>
             </div>
         </>
     )
